@@ -16,6 +16,8 @@
 		DDE5A48C1C975A2E002B43D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE5A48A1C975A2E002B43D0 /* LaunchScreen.storyboard */; };
 		DDE5A4971C975A2E002B43D0 /* TwoPlayerMathGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5A4961C975A2E002B43D0 /* TwoPlayerMathGameTests.m */; };
 		DDE5A4A21C975A2E002B43D0 /* TwoPlayerMathGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5A4A11C975A2E002B43D0 /* TwoPlayerMathGameUITests.m */; };
+		DDE5A4B11C9766A3002B43D0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5A4B01C9766A3002B43D0 /* Player.m */; };
+		DDE5A4B41C97671D002B43D0 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5A4B31C97671D002B43D0 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		DDE5A49D1C975A2E002B43D0 /* TwoPlayerMathGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoPlayerMathGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE5A4A11C975A2E002B43D0 /* TwoPlayerMathGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoPlayerMathGameUITests.m; sourceTree = "<group>"; };
 		DDE5A4A31C975A2E002B43D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE5A4AF1C9766A3002B43D0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		DDE5A4B01C9766A3002B43D0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		DDE5A4B21C97671D002B43D0 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		DDE5A4B31C97671D002B43D0 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				DDE5A48D1C975A2E002B43D0 /* Info.plist */,
 				DDE5A4851C975A2E002B43D0 /* TwoPlayerMathGame.xcdatamodeld */,
 				DDE5A4791C975A2E002B43D0 /* Supporting Files */,
+				DDE5A4AF1C9766A3002B43D0 /* Player.h */,
+				DDE5A4B01C9766A3002B43D0 /* Player.m */,
+				DDE5A4B21C97671D002B43D0 /* GameModel.h */,
+				DDE5A4B31C97671D002B43D0 /* GameModel.m */,
 			);
 			path = TwoPlayerMathGame;
 			sourceTree = "<group>";
@@ -274,9 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE5A4811C975A2E002B43D0 /* ViewController.m in Sources */,
+				DDE5A4B41C97671D002B43D0 /* GameModel.m in Sources */,
 				DDE5A4871C975A2E002B43D0 /* TwoPlayerMathGame.xcdatamodeld in Sources */,
 				DDE5A47E1C975A2E002B43D0 /* AppDelegate.m in Sources */,
 				DDE5A47B1C975A2E002B43D0 /* main.m in Sources */,
+				DDE5A4B11C9766A3002B43D0 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GameModel.h"
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *outputP1Score;
+@property (weak, nonatomic) IBOutlet UILabel *outpoutP2Score;
+
+@property (weak, nonatomic) IBOutlet UILabel *outputQuestion;
+@property (weak, nonatomic) IBOutlet UILabel *outputResponse;
 
 @end
 
