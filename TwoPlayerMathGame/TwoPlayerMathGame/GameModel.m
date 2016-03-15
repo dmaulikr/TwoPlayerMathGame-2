@@ -18,17 +18,18 @@
     
     _numberOfPlayers = 2;
     [self createPlayers];
+    [self createQuestion];
 
-    
-    while (_playAgain == YES) {
-        
-        [self createQuestion];
-        
-        [self createPlayers];
-        
-        
-    };
-    
+//    
+//    while (_playAgain == YES) {
+//        
+//        [self createQuestion];
+//        
+//        [self createPlayers];
+//        
+//        
+//    };
+//    
     
     return self;
 }
@@ -54,8 +55,8 @@
 }
 -(void)createQuestion
 {
-    _valueOne = arc4random() % 100+1 - 0;
-    _valueTwo = arc4random() % 100+1 - 0;
+    _valueOne = arc4random() % 20+1 - 0;
+    _valueTwo = arc4random() % 20+1 - 0;
     
     _questionType = arc4random() % 4+1 - 1;
     
@@ -63,22 +64,26 @@
       case ADDITION_Q:
             _correctResponse = _valueOne + _valueTwo;
             // set question question
-            
-            NSLog(@"%d + %d = ",_valueOne,_valueTwo);
+            _question = [NSString stringWithFormat:@"%d + %d",_valueOne,_valueTwo];
+            //_question = @"%d + %d =",_valueOne,_valueTwo;
+            //NSLog(@"%d + %d = ",_valueOne,_valueTwo);
         break;
         case SUBTRACTION_Q:
             _correctResponse = _valueOne - _valueTwo;
             // set question question
+           _question = [NSString stringWithFormat:@"%d - %d",_valueOne,_valueTwo];
             NSLog(@"%d - %d = ",_valueOne,_valueTwo);
             break;
         case MULTIPLICATION_Q:
             _correctResponse = _valueOne * _valueTwo;
             // set question question
+            _question = [NSString stringWithFormat:@"%d x %d",_valueOne,_valueTwo];
             NSLog(@"%d x %d = ",_valueOne,_valueTwo);
             break;
         case DIVISION_Q:
             _correctResponse = _valueOne / _valueTwo;
             // set question question
+            _question = [NSString stringWithFormat:@"%d / %d",_valueOne,_valueTwo];
             NSLog(@"%d / %d = ",_valueOne,_valueTwo);
             break;
       default:
